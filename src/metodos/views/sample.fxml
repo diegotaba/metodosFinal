@@ -19,7 +19,7 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <Pane prefHeight="399.0" prefWidth="591.0" style="-fx-background-color: FFFFFF;">
+      <Pane prefHeight="383.0" prefWidth="659.0" style="-fx-background-color: FFFFFF;">
          <children>
             <TextFlow id="textTittle" fx:id="textLabel1" disable="true" layoutX="21.0" layoutY="29.0" prefHeight="25.0" prefWidth="258.0" textAlignment="CENTER" />
             <Label layoutX="85.0" layoutY="159.0" prefHeight="33.0" prefWidth="421.0" text="BIENVENIDO, ELIGA EL METODO QUE DESEA UTILIZAR" textAlignment="CENTER">
@@ -28,22 +28,22 @@
                </font></Label>
             <ImageView fitHeight="87.0" fitWidth="196.0" layoutX="237.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@resources/imagenPresentacion.jpg" />
+                  <Image url="@../resources/imagenPresentacion.jpg" />
                </image>
             </ImageView>
-            <Button fx:id="buttonNewtonMethod" graphicTextGap="0.0" layoutX="103.0" layoutY="242.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="134.0" text="Metodo de Newton">
+            <Button fx:id="buttonNewtonMethod" graphicTextGap="0.0" layoutX="61.0" layoutY="242.0" mnemonicParsing="false" onAction="#onMethodNewtonClickButton" prefHeight="33.0" prefWidth="176.0" text="Metodo de Newton">
                <font>
                   <Font name="Baskerville Old Face" size="14.0" />
                </font></Button>
-            <Button layoutX="347.0" layoutY="242.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="134.0" text="Metodo de Secante">
+            <Button layoutX="347.0" layoutY="242.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="176.0" text="Metodo de Secante">
                <font>
                   <Font name="Baskerville Old Face" size="14.0" />
                </font></Button>
-            <Button layoutX="103.0" layoutY="302.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="134.0" text="Falsa Posicion">
+            <Button layoutX="61.0" layoutY="302.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="176.0" text="Falsa Posicion">
                <font>
                   <Font name="Baskerville Old Face" size="14.0" />
                </font></Button>
-            <Button layoutX="347.0" layoutY="298.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="134.0" text="Posicion Fija">
+            <Button layoutX="347.0" layoutY="298.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="176.0" text="Posicion Fija">
                <font>
                   <Font name="Baskerville Old Face" size="14.0" />
                </font></Button>

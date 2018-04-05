@@ -40,7 +40,7 @@
                <font>
                   <Font name="Baskerville Old Face" size="14.0" />
                </font></Button>
-            <Button layoutX="347.0" layoutY="242.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="176.0" text="Metodo de Secante">
+            <Button layoutX="347.0" layoutY="242.0" mnemonicParsing="false" onAction="#onMethodSecanteClickButton" prefHeight="33.0" prefWidth="176.0" text="Metodo de Secante">
                <font>
                   <Font name="Baskerville Old Face" size="14.0" />
                </font></Button>

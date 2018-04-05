@@ -18,7 +18,7 @@ import java.util.List;
 /**
  * Created by core i 5 on 4/04/2018.
  */
-public class ruleFalseViewController {
+public class FalsePositionViewController {
 
     @FXML
     Button back;

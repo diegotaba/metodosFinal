@@ -35,17 +35,31 @@ public class PresentationController {
 
     public void onMethodRuleFalseClickButton() throws IOException {
 
-        Parent root = FXMLLoader.load(getClass().getResource("views/falseRuleWindow.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("views/falsePositionWindow.fxml"));
 
         Stage newtonMethodWindow = new Stage();
 
         newtonMethodWindow.initModality(Modality.APPLICATION_MODAL);
-        newtonMethodWindow.setTitle("Metodo de Regla Falsa");
+        newtonMethodWindow.setTitle("Metodo de Falsa Posicion");
 
         newtonMethodWindow.setScene(new Scene(root,415,460));
         newtonMethodWindow.setResizable(false);
         newtonMethodWindow.show();
 
+    }
+
+    public void onMethodSecanteClickButton() throws IOException{
+
+        Parent root = FXMLLoader.load(getClass().getResource("views/secanteMethodWindow.fxml"));
+
+        Stage newtonMethodWindow = new Stage();
+
+        newtonMethodWindow.initModality(Modality.APPLICATION_MODAL);
+        newtonMethodWindow.setTitle("Metodo de Secante");
+
+        newtonMethodWindow.setScene(new Scene(root,415,460));
+        newtonMethodWindow.setResizable(false);
+        newtonMethodWindow.show();
     }
 
 

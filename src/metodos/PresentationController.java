@@ -15,6 +15,9 @@ public class PresentationController {
     @FXML
     Button buttonNewtonMethod;
 
+    @FXML
+    Button buttonRuleFalseMethod;
+
 
     public void onMethodNewtonClickButton() throws IOException {
 
@@ -28,7 +31,22 @@ public class PresentationController {
         newtonMethodWindow.setScene(new Scene(root,415,460));
         newtonMethodWindow.setResizable(false);
         newtonMethodWindow.show();
+    }
+
+    public void onMethodRuleFalseClickButton() throws IOException {
+
+        Parent root = FXMLLoader.load(getClass().getResource("views/falseRuleWindow.fxml"));
+
+        Stage newtonMethodWindow = new Stage();
+
+        newtonMethodWindow.initModality(Modality.APPLICATION_MODAL);
+        newtonMethodWindow.setTitle("Metodo de Regla Falsa");
+
+        newtonMethodWindow.setScene(new Scene(root,415,460));
+        newtonMethodWindow.setResizable(false);
+        newtonMethodWindow.show();
 
     }
+
 
 }

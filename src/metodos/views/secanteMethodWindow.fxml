@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.49379652605459057" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="405.0" prefWidth="415.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="metodos.SecanteMethodViewController">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="135.0" prefWidth="413.0">
+            <children>
+                <Text layoutX="14.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INGRESE LA FUNCIÓN:" wrappingWidth="154.13671875">
+                    <font>
+                        <Font name="Lucida Console" size="12.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="firstCoeficient" layoutX="4.0" layoutY="52.0" prefHeight="25.0" prefWidth="31.0" promptText="1" />
+                <Label layoutX="35.0" layoutY="57.0" text="X^3" />
+                <TextField fx:id="firstSign" layoutX="57.0" layoutY="53.0" prefHeight="25.0" prefWidth="21.0" text="-" />
+                <TextField fx:id="secondCoeficient" layoutX="76.0" layoutY="53.0" prefHeight="25.0" prefWidth="31.0" promptText="1" />
+                <Label layoutX="111.0" layoutY="56.0" text="X" />
+                <TextField fx:id="secondSign" layoutX="122.0" layoutY="52.0" prefHeight="25.0" prefWidth="21.0" text="-" />
+                <TextField fx:id="thirdCoficient" layoutX="144.0" layoutY="53.0" prefHeight="17.0" prefWidth="31.0" promptText="1" />
+                <Button fx:id="calculate" layoutX="319.0" layoutY="20.0" mnemonicParsing="false" onAction="#onClickCalculateButton" text="Calcular">
+                    <font>
+                        <Font name="Lucida Console" size="12.0" />
+                    </font>
+                </Button>
+                <Button fx:id="clean" layoutX="323.0" layoutY="54.0" mnemonicParsing="false" onAction="#onClickCleanButton" text="Limpiar">
+                    <font>
+                        <Font name="Lucida Console" size="12.0" />
+                    </font>
+                </Button>
+                <Text layoutX="191.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Xo:" wrappingWidth="31.0">
+                    <font>
+                        <Font name="Lucida Console" size="13.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="XoInitValue" layoutX="215.0" layoutY="53.0" prefHeight="25.0" prefWidth="41.0" />
+                <Button fx:id="back" layoutX="326.0" layoutY="89.0" mnemonicParsing="false" onAction="#onClickBackButton" text="Volver">
+                    <font>
+                        <Font name="Lucida Console" size="12.0" />
+                    </font>
+                </Button>
+                <Text layoutX="21.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="iteraciones:" wrappingWidth="94.0">
+                    <font>
+                        <Font name="Lucida Console" size="13.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="iterationNumber" layoutX="112.0" layoutY="88.0" prefHeight="25.0" prefWidth="41.0" />
+                <Text layoutX="55.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Error:" wrappingWidth="47.0">
+                    <font>
+                        <Font name="Lucida Console" size="13.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="errorValue" layoutX="113.0" layoutY="120.0" prefHeight="25.0" prefWidth="60.0" />
+                <Text layoutX="21.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor de la raiz:" wrappingWidth="141.0">
+                    <font>
+                        <Font name="Lucida Console" size="13.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="raizValue" editable="false" layoutX="164.0" layoutY="154.0" prefHeight="17.0" prefWidth="103.0" />
+                <Text layoutX="191.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X1:" wrappingWidth="31.0">
+                    <font>
+                        <Font name="Lucida Console" size="13.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="X1InitValue" layoutX="215.0" layoutY="88.0" prefHeight="25.0" prefWidth="41.0" />
+            </children></AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="297.0" prefWidth="598.0">
+            <children>
+                <TableView fx:id="tableViewSecanteMethod" layoutX="44.0" layoutY="13.0" prefHeight="309.0" prefWidth="598.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                    <columns>
+                        <TableColumn fx:id="iterationColumn" prefWidth="60.0" text="Iteracion" />
+                        <TableColumn prefWidth="72.0" text="X0" fx:id="xColumn" />
+                        <TableColumn prefWidth="92.0" text="X1" fx:id="xoColumn" />
+                        <TableColumn prefWidth="86.0" text="X2" fx:id="x1Column" />
+                        <TableColumn fx:id="errorColumn" prefWidth="111.0" text="Error" />
+                    </columns>
+                </TableView>
+            </children></AnchorPane>
+    </items>
+</SplitPane>

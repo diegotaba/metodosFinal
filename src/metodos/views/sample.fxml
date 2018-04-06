@@ -44,11 +44,7 @@
                <font>
                   <Font name="Baskerville Old Face" size="14.0" />
                </font></Button>
-            <Button fx:id="buttonRuleFalseMethod" layoutX="61.0" layoutY="302.0" mnemonicParsing="false" onAction="#onMethodRuleFalseClickButton" prefHeight="33.0" prefWidth="176.0" text="Falsa Posicion">
-               <font>
-                  <Font name="Baskerville Old Face" size="14.0" />
-               </font></Button>
-            <Button layoutX="347.0" layoutY="298.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="176.0" text="Posicion Fija">
+            <Button fx:id="buttonRuleFalseMethod" layoutX="208.0" layoutY="312.0" mnemonicParsing="false" onAction="#onMethodRuleFalseClickButton" prefHeight="33.0" prefWidth="176.0" text="Falsa Posicion">
                <font>
                   <Font name="Baskerville Old Face" size="14.0" />
                </font></Button>

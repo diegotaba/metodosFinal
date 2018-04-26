@@ -28,7 +28,7 @@ public class PresentationController {
         newtonMethodWindow.initModality(Modality.APPLICATION_MODAL);
         newtonMethodWindow.setTitle("Metodo de newton");
 
-        newtonMethodWindow.setScene(new Scene(root,415,460));
+        newtonMethodWindow.setScene(new Scene(root,600,760));
         newtonMethodWindow.setResizable(false);
         newtonMethodWindow.show();
     }
@@ -42,7 +42,7 @@ public class PresentationController {
         newtonMethodWindow.initModality(Modality.APPLICATION_MODAL);
         newtonMethodWindow.setTitle("Metodo de Falsa Posicion");
 
-        newtonMethodWindow.setScene(new Scene(root,415,460));
+        newtonMethodWindow.setScene(new Scene(root,600,760));
         newtonMethodWindow.setResizable(false);
         newtonMethodWindow.show();
 
@@ -57,7 +57,7 @@ public class PresentationController {
         newtonMethodWindow.initModality(Modality.APPLICATION_MODAL);
         newtonMethodWindow.setTitle("Metodo de Secante");
 
-        newtonMethodWindow.setScene(new Scene(root,415,460));
+        newtonMethodWindow.setScene(new Scene(root,600,760));
         newtonMethodWindow.setResizable(false);
         newtonMethodWindow.show();
     }

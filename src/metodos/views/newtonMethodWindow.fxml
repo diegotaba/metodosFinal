@@ -1,75 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<SplitPane dividerPositions="0.41687344913151364" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="405.0" prefWidth="415.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="metodos.NewtonMethodViewController">
+<SplitPane dividerPositions="0.7277936962750716" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="metodos.NewtonMethodViewController">
   <items>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="135.0" prefWidth="413.0">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="442.0" prefWidth="598.0">
          <children>
             <Text layoutX="14.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INGRESE LA FUNCIÓN:" wrappingWidth="154.13671875">
                <font>
                   <Font name="Lucida Console" size="12.0" />
                </font>
             </Text>
-            <TextField fx:id="firstCoeficient" layoutX="13.0" layoutY="53.0" prefHeight="25.0" prefWidth="31.0" promptText="1" />
-            <Label layoutX="44.0" layoutY="56.0" text="X^3" />
-            <TextField fx:id="firstSign" layoutX="66.0" layoutY="52.0" prefHeight="25.0" prefWidth="21.0" text="-" />
-            <TextField fx:id="secondCoeficient" layoutX="86.0" layoutY="52.0" prefHeight="25.0" prefWidth="31.0" promptText="1" />
-            <Label layoutX="117.0" layoutY="56.0" text="X" />
-            <TextField fx:id="secondSign" layoutX="128.0" layoutY="53.0" prefHeight="25.0" prefWidth="21.0" text="-" />
-            <TextField fx:id="thirdCoficient" layoutX="148.0" layoutY="53.0" prefHeight="25.0" prefWidth="31.0" promptText="1" />
-            <Button fx:id="calculate" layoutX="319.0" layoutY="20.0" mnemonicParsing="false" onAction="#onClickCalculateButton" text="Calcular">
+            <TextField fx:id="firstCoeficient" layoutX="9.0" layoutY="61.0" prefHeight="25.0" prefWidth="41.0" promptText="1" />
+            <Label layoutX="55.0" layoutY="65.0" text="X^3" />
+            <TextField fx:id="firstSign" alignment="TOP_CENTER" layoutX="89.0" layoutY="61.0" prefHeight="23.0" prefWidth="31.0" text="-" />
+            <TextField fx:id="secondCoeficient" layoutX="127.0" layoutY="59.0" prefHeight="25.0" prefWidth="47.0" promptText="1" />
+            <Label layoutX="180.0" layoutY="66.0" text="X" />
+            <TextField fx:id="secondSign" alignment="TOP_CENTER" layoutX="195.0" layoutY="59.0" prefHeight="25.0" prefWidth="31.0" text="-" />
+            <TextField fx:id="thirdCoficient" layoutX="232.0" layoutY="59.0" prefHeight="25.0" prefWidth="47.0" promptText="1" />
+            <Button fx:id="calculate" layoutX="497.0" layoutY="28.0" mnemonicParsing="false" onAction="#onClickCalculateButton" text="Calcular">
                <font>
                   <Font name="Lucida Console" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="clean" layoutX="323.0" layoutY="54.0" mnemonicParsing="false" onAction="#onClickCleanButton" text="Limpiar">
+            <Button fx:id="clean" layoutX="500.0" layoutY="62.0" mnemonicParsing="false" onAction="#onClickCleanButton" text="Limpiar">
                <font>
                   <Font name="Lucida Console" size="12.0" />
                </font>
             </Button>
-            <Text layoutX="218.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Xo:" wrappingWidth="31.0">
+            <Text layoutX="332.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Xo:" wrappingWidth="31.0">
                <font>
                   <Font name="Lucida Console" size="13.0" />
                </font>
             </Text>
-            <TextField fx:id="XoInitValue" layoutX="249.0" layoutY="52.0" prefHeight="25.0" prefWidth="41.0" />
-            <Button fx:id="back" layoutX="326.0" layoutY="89.0" mnemonicParsing="false" onAction="#onClickBackButton" text="Volver">
+            <TextField fx:id="XoInitValue" layoutX="373.0" layoutY="34.0" prefHeight="25.0" prefWidth="61.0" />
+            <Button fx:id="back" layoutX="502.0" layoutY="98.0" mnemonicParsing="false" onAction="#onClickBackButton" text="Volver">
                <font>
                   <Font name="Lucida Console" size="12.0" />
                </font>
             </Button>
-            <Text layoutX="44.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="iteraciones:" wrappingWidth="94.0">
+            <Text layoutX="24.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="iteraciones:" wrappingWidth="81.0">
                <font>
                   <Font name="Lucida Console" size="13.0" />
                </font>
             </Text>
-            <TextField fx:id="iterationNumber" layoutX="138.0" layoutY="88.0" prefHeight="25.0" prefWidth="41.0" />
-            <Text layoutX="195.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Error:" wrappingWidth="47.0">
+            <TextField fx:id="iterationNumber" layoutX="117.0" layoutY="103.0" prefHeight="25.0" prefWidth="61.0" />
+            <Text layoutX="316.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Error:" wrappingWidth="47.0">
                <font>
                   <Font name="Lucida Console" size="13.0" />
                </font>
             </Text>
-            <TextField fx:id="errorValue" layoutX="249.0" layoutY="88.0" prefHeight="25.0" prefWidth="60.0" />
-            <Text layoutX="32.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor de la raiz:" wrappingWidth="141.0">
+            <TextField fx:id="errorValue" layoutX="372.0" layoutY="71.0" prefHeight="25.0" prefWidth="60.0" />
+            <Text layoutX="21.0" layoutY="452.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor de la raiz:" wrappingWidth="103.0">
                <font>
                   <Font name="Lucida Console" size="13.0" />
                </font>
             </Text>
-            <TextField fx:id="raizValue" editable="false" layoutX="182.0" layoutY="127.0" prefHeight="25.0" prefWidth="103.0" />
+            <TextField fx:id="raizValue" editable="false" layoutX="141.0" layoutY="437.0" prefHeight="25.0" prefWidth="142.0" />
+            <TextArea editable="false" layoutX="22.0" layoutY="148.0" prefHeight="281.0" prefWidth="123.0" text="Bienvenido, por favor  ingrese  los valores de la funcion, numero de  interaciones valor de Xo y&#10;el porcentaje de Error &#10;Nominal separado por punto&#10;Ejemplo : 0.001" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </TextArea>
+             <LineChart fx:id="lineGraph" layoutX="168.0" layoutY="149.0" legendVisible="false" prefHeight="281.0" prefWidth="404.0" visible="true">
+                 <xAxis>
+                     <NumberAxis autoRanging="false" lowerBound="-10" side="BOTTOM" tickUnit="1" upperBound="10" />
+                 </xAxis>
+                 <yAxis>
+                     <NumberAxis autoRanging="false" lowerBound="-10" side="LEFT" tickUnit="1" upperBound="10" />
+                 </yAxis>
+             </LineChart>
          </children></AnchorPane>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="297.0" prefWidth="598.0">
          <children>
-            <TableView fx:id="newtonMethodTable" layoutX="44.0" layoutY="13.0" prefHeight="309.0" prefWidth="598.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <TableView fx:id="newtonMethodTable" layoutX="44.0" layoutY="13.0" prefHeight="321.0" prefWidth="578.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
               <columns>
-                <TableColumn fx:id="iterationColumn" prefWidth="96.0" text="Iteracion" />
-                <TableColumn prefWidth="100.0" text="X" fx:id="xColumn" />
-                  <TableColumn prefWidth="100.0" text="X0" fx:id="xoColumn" />
-                  <TableColumn fx:id="errorColumn" prefWidth="100.0" text="Error" />
+                <TableColumn fx:id="iterationColumn" prefWidth="140.0" text="Iteracion" />
+                <TableColumn prefWidth="108.0" text="X" fx:id="xColumn" />
+                  <TableColumn prefWidth="158.0" text="X0" fx:id="xoColumn" />
+                  <TableColumn fx:id="errorColumn" prefWidth="164.0" text="Error" />
               </columns>
             </TableView>
          </children></AnchorPane>

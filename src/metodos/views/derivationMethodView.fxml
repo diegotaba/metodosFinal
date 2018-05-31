@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="metodos.DerivationNumericController">
+   <children>
+      <Text layoutX="54.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Metodo de derivación" wrappingWidth="77.13671875">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="54.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingrese  la funcion f(x):" />
+      <TextField fx:id="functionTextField" layoutX="70.0" layoutY="101.0" />
+      <Text layoutX="54.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingrese  el valor de x :" />
+      <TextField layoutX="70.0" layoutY="161.0" fx:id="xValueTextField" />
+      <Text layoutX="58.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingrese  el valor de h:" />
+      <TextField fx:id="hValueTextField" layoutX="70.0" layoutY="224.0" />
+      <TextArea editable="false" layoutX="272.0" layoutY="29.0" prefHeight="170.0" prefWidth="296.0" text="Importante&#10;&#10;- El valor de h esta dado por un numero normalmente muy bajo I.E 0.0001 entre mas bajo sea este numero mas aproximada sera el calculo.&#10;-  Los valores ingresados deben ser enteros y positivos.&#10;-  Los valores ingresados no deben tener espacios a el inicio o al fina.l" wrapText="true" />
+      <Button fx:id="calculateButton" layoutX="300.0" layoutY="224.0" mnemonicParsing="false" onAction="#onCalculateButtonDerivationMethod" text="calcular" />
+      <Button layoutX="428.0" layoutY="224.0" mnemonicParsing="false" text="limpiar" />
+      <Text layoutX="70.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diferencia Progresiva" />
+      <Text layoutX="246.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diferencia Regresiva" />
+      <Text layoutX="420.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diferencia Central" />
+      <TextField fx:id="progresiveValueTextField" layoutX="57.0" layoutY="304.0" />
+      <TextField fx:id="regresiveValueTextField" layoutX="232.0" layoutY="304.0" />
+      <TextField fx:id="centralValueTextField" layoutX="406.0" layoutY="304.0" />
+   </children>
+</Pane>

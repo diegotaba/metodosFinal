@@ -11,7 +11,7 @@
       <TextField fx:id="functionTrapecioTextField" layoutX="73.0" layoutY="66.0" />
       <Text layoutX="32.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingrese el valor del limite inferior:" />
       <TextField fx:id="limitInferiorTextField" layoutX="73.0" layoutY="119.0" />
-      <TextArea editable="false" layoutX="269.0" layoutY="40.0" prefHeight="192.0" prefWidth="277.0" text="Importante:&#10;&#10;- El valor del numero de subintervalos debe ser un numero entero positivo par &#10;&#10;- Los valores de los limites tanto inferior como superior debe ser un entero positivo&#10;&#10;" wrapText="true" />
+      <TextArea editable="false" layoutX="269.0" layoutY="40.0" prefHeight="192.0" prefWidth="277.0" text="Importante:&#10;&#10;- El valor del numero de subintervalos debe ser un numero entero positivo par &#10;&#10;- Los valores de los limites tanto inferior como superior debe ser un entero positivo&#10;&#10;- Los valores ingresados no deben tener espacios a el inicio o al final&#10;&#10;" wrapText="true" />
       <Text layoutX="32.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingrese el valor del limite superior:" />
       <TextField fx:id="limitSuperiorTextField" layoutX="73.0" layoutY="172.0" />
       <Text layoutX="32.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingrese el numero de subintervalos:" />

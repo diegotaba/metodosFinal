@@ -27,27 +27,48 @@
       <Pane prefHeight="383.0" prefWidth="659.0" style="-fx-background-color: FFFFFF;">
          <children>
             <TextFlow id="textTittle" fx:id="textLabel1" disable="true" layoutX="21.0" layoutY="29.0" prefHeight="25.0" prefWidth="258.0" textAlignment="CENTER" />
-            <Label layoutX="85.0" layoutY="159.0" prefHeight="33.0" prefWidth="421.0" text="BIENVENIDO, ELIGA EL METODO QUE DESEA UTILIZAR" textAlignment="CENTER">
+            <Label layoutX="14.0" layoutY="13.0" prefHeight="63.0" prefWidth="337.0" text="BIENVENIDO, ELIGA EL METODO QUE DESEA UTILIZAR" textAlignment="CENTER" wrapText="true">
                <font>
                   <Font name="Bauhaus 93" size="18.0" />
                </font></Label>
-            <ImageView fitHeight="87.0" fitWidth="196.0" layoutX="237.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="87.0" fitWidth="176.0" layoutX="92.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../resources/imagenPresentacion.jpg" />
                </image>
             </ImageView>
-            <Button fx:id="buttonNewtonMethod" graphicTextGap="0.0" layoutX="61.0" layoutY="242.0" mnemonicParsing="false" onAction="#onMethodNewtonClickButton" prefHeight="33.0" prefWidth="176.0" text="Metodo de Newton">
+            <Button fx:id="buttonNewtonMethod" graphicTextGap="0.0" layoutX="55.0" layoutY="138.0" mnemonicParsing="false" onAction="#onMethodNewtonClickButton" prefHeight="33.0" prefWidth="176.0" text="Metodo de Newton">
                <font>
                   <Font name="Baskerville Old Face" size="14.0" />
                </font></Button>
-            <Button layoutX="347.0" layoutY="242.0" mnemonicParsing="false" onAction="#onMethodSecanteClickButton" prefHeight="33.0" prefWidth="176.0" text="Metodo de Secante">
+            <Button layoutX="55.0" layoutY="86.0" mnemonicParsing="false" onAction="#onMethodSecanteClickButton" prefHeight="33.0" prefWidth="176.0" text="Metodo de Secante">
                <font>
                   <Font name="Baskerville Old Face" size="14.0" />
                </font></Button>
-            <Button fx:id="buttonRuleFalseMethod" layoutX="208.0" layoutY="312.0" mnemonicParsing="false" onAction="#onMethodRuleFalseClickButton" prefHeight="33.0" prefWidth="176.0" text="Falsa Posicion">
+            <Button fx:id="buttonRuleFalseMethod" layoutX="55.0" layoutY="192.0" mnemonicParsing="false" onAction="#onMethodRuleFalseClickButton" prefHeight="33.0" prefWidth="176.0" text="Falsa Posicion">
                <font>
                   <Font name="Baskerville Old Face" size="14.0" />
                </font></Button>
+            <Button layoutX="340.0" layoutY="209.0" mnemonicParsing="false" onAction="#onMethodSecanteClickButton" prefHeight="33.0" prefWidth="176.0" text="Series de Taylor">
+               <font>
+                  <Font name="Baskerville Old Face" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="340.0" layoutY="258.0" mnemonicParsing="false" onAction="#onMethodSecanteClickButton" prefHeight="33.0" prefWidth="176.0" text="Derivación Numerica">
+               <font>
+                  <Font name="Baskerville Old Face" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="340.0" layoutY="312.0" mnemonicParsing="false" onAction="#onMethodIntegrationButton" prefHeight="33.0" prefWidth="176.0" text="Integración Numerica">
+               <font>
+                  <Font name="Baskerville Old Face" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="87.0" fitWidth="200.0" layoutX="66.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="340.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/simpson_metodos.jpg" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
    </children>

@@ -28,7 +28,7 @@ public class PresentationController {
         newtonMethodWindow.initModality(Modality.APPLICATION_MODAL);
         newtonMethodWindow.setTitle("Metodo de newton");
 
-        newtonMethodWindow.setScene(new Scene(root,415,460));
+        newtonMethodWindow.setScene(new Scene(root,600,650));
         newtonMethodWindow.setResizable(false);
         newtonMethodWindow.show();
     }
@@ -42,7 +42,7 @@ public class PresentationController {
         newtonMethodWindow.initModality(Modality.APPLICATION_MODAL);
         newtonMethodWindow.setTitle("Metodo de Falsa Posicion");
 
-        newtonMethodWindow.setScene(new Scene(root,415,460));
+        newtonMethodWindow.setScene(new Scene(root,600,650));
         newtonMethodWindow.setResizable(false);
         newtonMethodWindow.show();
 
@@ -60,6 +60,22 @@ public class PresentationController {
         newtonMethodWindow.setScene(new Scene(root,415,460));
         newtonMethodWindow.setResizable(false);
         newtonMethodWindow.show();
+    }
+
+    public void onMethodIntegrationButton () throws IOException{
+
+        Parent root = FXMLLoader.load(getClass().getResource("views/menuIntegracionNumerica.fxml"));
+
+        Stage methodIntegrationWindow = new Stage();
+
+        methodIntegrationWindow.initModality(Modality.APPLICATION_MODAL);
+        methodIntegrationWindow.setTitle("Menu Integración Numerica");
+        methodIntegrationWindow.centerOnScreen();
+
+
+        methodIntegrationWindow.setScene(new Scene(root,300,150));
+        methodIntegrationWindow.setResizable(false);
+        methodIntegrationWindow.show();
     }
 
 

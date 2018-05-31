@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="metodos.TrapecioMethodController">
+   <children>
+      <Text layoutX="29.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingrese la Funcion:" wrappingWidth="115.13671875" />
+      <TextField fx:id="functionTrapecioTextField" layoutX="73.0" layoutY="66.0" />
+      <Text layoutX="32.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingrese el valor del limite inferior:" />
+      <TextField fx:id="limitInferiorTextField" layoutX="73.0" layoutY="119.0" />
+      <TextArea editable="false" layoutX="269.0" layoutY="40.0" prefHeight="192.0" prefWidth="277.0" text="Importante:&#10;&#10;- El valor del numero de subintervalos debe ser un numero entero positivo par &#10;&#10;- Los valores de los limites tanto inferior como superior debe ser un entero positivo&#10;&#10;" wrapText="true" />
+      <Text layoutX="32.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingrese el valor del limite superior:" />
+      <TextField fx:id="limitSuperiorTextField" layoutX="73.0" layoutY="172.0" />
+      <Text layoutX="32.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingrese el numero de subintervalos:" />
+      <TextField fx:id="nValueTextField" layoutX="73.0" layoutY="228.0" />
+      <Button fx:id="calculateButton" layoutX="318.0" layoutY="253.0" mnemonicParsing="false" onAction="#onCalculateButtonClick" text="Calcular" />
+      <Button fx:id="cleanButton" layoutX="426.0" layoutY="253.0" mnemonicParsing="false" text="Limpiar" />
+      <Text layoutX="45.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor de h:" />
+      <TextField fx:id="hValueTextField" layoutX="73.0" layoutY="319.0" />
+      <Text layoutX="295.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor de la integral:" wrappingWidth="103.9765625" />
+      <TextField fx:id="integralValueTextField" layoutX="318.0" layoutY="319.0" />
+      <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Solucion Metodo de Trapecio" wrappingWidth="188.56640625">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

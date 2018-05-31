@@ -78,5 +78,20 @@ public class PresentationController {
         methodIntegrationWindow.show();
     }
 
+    public void onMethodDerivationClickButton () throws IOException{
+
+        Parent root = FXMLLoader.load(getClass().getResource("views/derivationMethodView.fxml"));
+
+        Stage methodderivationMethodView = new Stage();
+
+        methodderivationMethodView.initModality(Modality.APPLICATION_MODAL);
+        methodderivationMethodView.setTitle("Derivacion Numerica");
+        methodderivationMethodView.centerOnScreen();
+
+
+        methodderivationMethodView.setScene(new Scene(root,600,400));
+        methodderivationMethodView.setResizable(false);
+        methodderivationMethodView.show();
+    }
 
 }
